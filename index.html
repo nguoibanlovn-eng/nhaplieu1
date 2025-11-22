@@ -1,15 +1,31 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Form nhập liệu kênh bán</title>
-  <!-- Redirect ngay lập tức -->
-  <meta http-equiv="refresh" content="0; url=https://script.google.com/macros/s/AKfycbx-sNh3bDltJBmN-WLlNU57HDJIbXCxdvdZhPFRYRWcMMgWkpiNGAEIhJL7GxBHo7bwgg/exec?page=form">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Redirect ngay lập tức sang Apps Script -->
+  <meta http-equiv="refresh"
+        content="0; url=https://script.google.com/macros/s/AKfycbx-sNh3bDltJBmN-WLlNU57HDJIbXCxdvdZhPFRYRWcMMgWkpiNGAEIhJL7GxBHo7bwgg/exec?page=form" />
 </head>
 <body>
-  <p>Đang chuyển đến form nhập liệu...</p>
+  <p>Đang chuyển đến form nhập liệu kênh bán...</p>
+  <p>
+    Nếu trình duyệt không tự chuyển, hãy bấm vào
+    <a href="https://script.google.com/macros/s/AKfycbx-sNh3bDltJBmN-WLlNU57HDJIbXCxdvdZhPFRYRWcMMgWkpiNGAEIhJL7GxBHo7bwgg/exec?page=form">
+      link mở form tại đây
+    </a>.
+  </p>
+
   <script>
-    window.location.href = "https://script.google.com/macros/s/AKfycbx-sNh3bDltJBmN-WLlNU57HDJIbXCxdvdZhPFRYRWcMMgWkpiNGAEIhJL7GxBHo7bwgg/exec?page=form";
+    // Fallback redirect bằng JavaScript
+    (function () {
+      var target = "https://script.google.com/macros/s/AKfycbx-sNh3bDltJBmN-WLlNU57HDJIbXCxdvdZhPFRYRWcMMgWkpiNGAEIhJL7GxBHo7bwgg/exec?page=form";
+      if (window.location.href !== target) {
+        window.location.replace(target);
+      }
+    })();
   </script>
 </body>
 </html>
